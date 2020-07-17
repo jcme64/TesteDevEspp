@@ -1,3 +1,4 @@
+http://localhost:4010/swagger
 ---
 page_type: sample
 description: "Learn how to add Swashbuckle to your ASP.NET Core web API project to integrate the Swagger UI."
