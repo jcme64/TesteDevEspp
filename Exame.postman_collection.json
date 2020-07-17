@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "0cf1b9fa-868b-4334-a7d8-2f3780c6614f",
+		"name": "Exame",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4010/api/Clientes/Incluir",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idCliente\": 0,\r\n  \"nomeCliente\": \"Yago Fábio Farias\",\r\n  \"cpfCnpj\": \"27849822382\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4010/api/Clientes/Incluir",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4010",
+					"path": [
+						"api",
+						"Clientes",
+						"Incluir"
+					]
+				},
+				"description": "Inclusão de cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4010/api/Clientes/Obter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4010/api/Clientes/Obter",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4010",
+					"path": [
+						"api",
+						"Clientes",
+						"Obter"
+					]
+				},
+				"description": "Obter Todos"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4010/api/Clientes/ObterById?Id=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4010/api/Clientes/ObterById?Id=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4010",
+					"path": [
+						"api",
+						"Clientes",
+						"ObterById"
+					],
+					"query": [
+						{
+							"key": "Id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Obter por id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4010/api/Clientes/Atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idCliente\": 5,\r\n  \"nomeCliente\": \"Alessandra Sarah Ferreira\",\r\n  \"cpfCnpj\": \"88484881962\",\r\n  \"eMail\": \"jcme64@gmail.com\",\r\n  \"tipoCliente\": \"F\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4010/api/Clientes/Atualizar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4010",
+					"path": [
+						"api",
+						"Clientes",
+						"Atualizar"
+					]
+				},
+				"description": "Alteração de cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4010/api/Clientes/Excluir?Id=4",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4010/api/Clientes/Excluir?Id=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4010",
+					"path": [
+						"api",
+						"Clientes",
+						"Excluir"
+					],
+					"query": [
+						{
+							"key": "Id",
+							"value": "5"
+						}
+					]
+				},
+				"description": "Exclusão de cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4010/api/Contas/IncluirConta",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idConta\": 0,\r\n  \"idCliente\": 2,\r\n  \"numeroConta\": \"00000002\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4010/api/Contas/IncluirConta",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4010",
+					"path": [
+						"api",
+						"Contas",
+						"IncluirConta"
+					]
+				},
+				"description": "Inclusão de conta"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4010/api/Contas/Obter?idCliente=2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4010/api/Contas/Obter?idCliente=2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4010",
+					"path": [
+						"api",
+						"Contas",
+						"Obter"
+					],
+					"query": [
+						{
+							"key": "idCliente",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Obter por id cliente"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4010/api/Lancamentos/Obter?idConta=1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4010/api/Lancamentos/Obter?idConta=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4010",
+					"path": [
+						"api",
+						"Lancamentos",
+						"Obter"
+					],
+					"query": [
+						{
+							"key": "idConta",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Obter lancamento por id Conta"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4010/api/Lancamentos/IncluirLancamento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idLancamento\": 0,\r\n  \"idConta\": 1,\r\n  \"dtLancamento\": \"2020-07-16T16:39:55.773Z\",\r\n  \"valorLancamento\": -190.55\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4010/api/Lancamentos/IncluirLancamento",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4010",
+					"path": [
+						"api",
+						"Lancamentos",
+						"IncluirLancamento"
+					]
+				},
+				"description": "Inclusão de credito/debito"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,6 @@
+C:\Desenvolvimento\CrossGymApi\obj\Debug\netcoreapp3.1\CrossGym.csprojAssemblyReference.cache
+C:\Desenvolvimento\CrossGymApi\obj\Debug\netcoreapp3.1\CrossGym.AssemblyInfoInputs.cache
+C:\Desenvolvimento\CrossGymApi\obj\Debug\netcoreapp3.1\CrossGym.AssemblyInfo.cs
+C:\Desenvolvimento\CrossGymApi\obj\Debug\netcoreapp3.1\CrossGym.csproj.CoreCompileInputs.cache
+C:\Desenvolvimento\CrossGymApi\obj\Debug\netcoreapp3.1\CrossGym.MvcApplicationPartsAssemblyInfo.cs
+C:\Desenvolvimento\CrossGymApi\obj\Debug\netcoreapp3.1\CrossGym.MvcApplicationPartsAssemblyInfo.cache

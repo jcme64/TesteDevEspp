@@ -1,0 +1,36 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:4010/",
+      // "sslPort": 44308
+    }
+  },
+  "profiles": {
+    "Production": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production",
+        "ApiBaseUrl": "https://192.168.15.12",
+        "ApiJwtPort": "4000",
+        "ApiCtrlAcessoPort": "4002",
+        "SecurityKey": "Warallo Consultoria e Desenvolvimento de Sistemas Ltda.",
+        "DBConnection": "server=127.0.0.1;user id=root;password=271114;port=3306;database=exame;"
+      }
+    },
+    "Development": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ApiBaseUrl": "http://localhost",
+        "ApiJwtPort": "4000",
+        "ApiCtrlAcessoPort": "4002",
+        "SecurityKey": "Warallo Consultoria e Desenvolvimento de Sistemas Ltda.",
+        "DBConnection": "server=127.0.0.1;port=3306;database=exame;user id=root;password=271114;"
+      }
+    }
+  }
+}
